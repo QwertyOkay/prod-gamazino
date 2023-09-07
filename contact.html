@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Righteous&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/global.min.css ">
+  <link rel="stylesheet" href="css/style.min.css ">
+
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <a href="./index.html" class="logo header__logo">
+      <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Gamazino logo"></picture>
+    </a>
+  </div>
+</header>
+    <main class="main">
+      <section class="contact section--offset">
+  <div class="container">
+    <h2 class="title">Contact us</h2>
+    <div class="contact-form">
+      <div class="page-form__body">
+        <form id="form" class="form-body">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address:</label>
+            <input required type="email" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Type you question:</label>
+            <textarea id="message"></textarea>
+          </div>
+          <button type="submit" class="btn-reset form-body__btn">Submit</button>
+        </form>
+  
+        <div class="popup">
+          <picture><source srcset="img/success.webp" type="image/webp"><img src="img/success.jpg" alt="success"></picture>
+          <h2>Thank you!</h2>
+          <p>We will contact you soon</p>
+          <button type="button" class="btn btn-success" onclick="popupClose()">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <h2 class="visually-hidden">Footer</h2>
+    <ul class="flex flex--center footer__row">
+      <li>
+        <a href="./terms.html" class="footer__item">Terms &amp; Conditions</a>
+      </li>
+      <li>
+        <a href="./return.html" class="footer__item">Return Policy</a>
+      </li>
+      <li>
+        <a href="./privacy.html" class="footer__item">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="footer__item">Contact us</a>
+      </li>
+    </ul>
+    <div class="footer__copyright">&copy; gamazino, 2023. all rights reserved</div>
+  </div>
+</footer>
+  </div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
