@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <meta name="theme-color" content="#111111">
   <meta property="og:url" content="">
   <meta property="og:type" content="website">
@@ -18,8 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Righteous&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/global.min.css ">
-  <link rel="stylesheet" href="../css/style.min.css ">
+  <link rel="stylesheet" href="../css/global.min.css?ver=2">
+    <link rel="stylesheet" href="../css/Mainstyle.min.css?ver=2">
+    <link rel="stylesheet" href="../css/style.min.css?ver=2">
 
   <title>Gaming Chair, Racing Style Bonded Leather Gamer Chair, Ergonomic Office Chair Computer Desk Executive Chair, with Adjustable Height and Flip-Up Arms, Gaming Chair for Adults Teens Kids Men Women</title>
 </head>
@@ -29,7 +30,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <a href="./" class="logo header__logo">
+       <a href="../" class="logo header__logo">
           <img src="../img/logo.png" alt="Gamazino logo">
         </a>
       </div>
@@ -62,7 +63,8 @@
               </p>
               <form action="" class="product__form" id="contact__form">
                 <div class="product__form-field">
-                  <input type="email" placeholder="Type your email" required>
+                  <input type="email" placeholder="Type your email" required id="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                required>
                 </div>
                 <div class="product__form-field">
                   <button type="submit" class="btn-reset form-body__btn">Order</button>
@@ -78,40 +80,85 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <h2 class="visually-hidden">Footer</h2>
-        <ul class="flex flex--center footer__row">
-          <li>
-            <a href="../terms.html" class="footer__item">Terms &amp; Conditions</a>
-          </li>
-          <li>
-            <a href="../return.html" class="footer__item">Return Policy</a>
-          </li>
-          <li>
-            <a href="../privacy.html" class="footer__item">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="../contact.html" class="footer__item">Contact us</a>
-          </li>
-        </ul>
-        <div class="footer__copyright">&copy; gamazino, 2023. all rights reserved</div>
-      </div>
-    </footer>
+    <footer class="footer" id="footer">
+            <ul class="top">
+                <li class="itemFooter">
+                    <h2 class="titleFooter">Customer Service</h2>
+
+                    <a href="../terms.html">
+                        Terms & Conditions
+                    </a>
+                    <a href="../privacy.html">
+                        Privacy Policy
+                    </a>
+                    <a href="../products.html">
+                        Products
+                    </a>
+                </li>
+                <li class="itemFooter">
+                    <h2 class="titleFooter">Links</h2>
+                    <a href="../about.html">
+                        About us
+                    </a>
+                    <a href="../contact.html" id="myBtn">
+                        Contact us
+                    </a>
+                </li>
+                <li class="itemFooter">
+                    <h2 class="titleFooter">Orders</h2>
+                    <a href="../return.html">
+                        Free 30 Day Returns
+                    </a>
+                    <a href="../delivery.html">
+                        Delivery info
+                    </a>
+                    <a href="../warranty.html">
+                        Warranty info
+                    </a>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li class="right">
+                    <div class="iconList">
+                        <ul class="iconList__socials">
+                            <a href="https://facebook.com" target="_blank">
+                                <li><img src="../img/social/facebook.png" alt="" class="iconFooter"></li>
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <li><img src="../img/social/tiktok.png" alt="" class="iconFooter"></li>
+                            </a>
+                            <a href="https://youtube.com" target="_blank">
+                                <li><img src="../img/social/youtube.png" alt="" class="iconFooter"></li>
+                            </a>
+                            <a href="https://instagram.com" target="_blank">
+                                <li><img src="../img/social/instagram.png" alt="" class="iconFooter"></li>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer__copy">Gamazino.com &copy; 2022 - <span id="year"></span><br> All rights reserved
+                    </div>
+                </li>
+            </ul>
+        </footer>
   </div>
+
   <script>
     let form = document.querySelector('#contact__form');
     let popup = document.querySelector('.popup');
+    let emailField = document.querySelector('#email'); // Замените 'email' на актуальный ID вашего поля почты
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       popup.classList.add('poppedup');
+      emailField.value = ''; // Очищаем поле почты после отправки формы
     });
 
     function popupClose() {
       popup.classList.remove('poppedup');
     }
-  </script>
+</script>
   <script src="../js/app.min.js"></script>
 </body>
 
