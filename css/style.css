@@ -1271,6 +1271,7 @@ footer p:hover {
 .text {
   color: #000;
   font-weight: 300;
+  margin: 15px 0px;
 }
 
 .h3Text {
@@ -1287,10 +1288,6 @@ footer p:hover {
 
 .footer {
   padding: 5px 0 0 !important;
-}
-
-.section--offset {
-  padding: 20px 0;
 }
 
 .single .statues__title {
